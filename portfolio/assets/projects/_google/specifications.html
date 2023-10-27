@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Especificações | Google Glass</title>
+	<link rel="stylesheet" href="../_google/_css/specifications.css"/>
+</head>
+<script>
+	function mudaFoto(foto) 
+		{document.getElementById("icon").src = foto;}
+</script>
+<body>
+	<header class="header">
+		<hgroup class="presentation__title">
+			<h1><strong>Google</strong> Glass</h1>
+			<h2>A revolução do Google está chegando<h2>
+		</hgroup>
+		<section class="header__image">
+			<img id="icon" src="../_google/_imagens/glass-oculos-preto-peq.png"/>	
+		</section>
+		<nav class="header__menu">
+			<a class="header__menu__link" href="../_google/index.html" target="_self" onmouseover="mudaFoto('../_google/_imagens/home.png')" onmouseout="mudaFoto('../_google/_imagens/especificacoes.png')">Home</a>
+			<a class="header__menu__link" href="../_google/specifications.html" target="_self" onmouseover="mudaFoto('../_google/_imagens/especificacoes.png')" onmouseout="mudaFoto('../_google/_imagens/especificacoes.png')">Especificações</a>
+			<a class="header__menu__link" href="../_google/picture.html" target="_self" onmouseover="mudaFoto('../_google/_imagens/fotos.png')" onmouseout="mudaFoto('../_google/_imagens/especificacoes.png')">Fotos</a>
+			<a class="header__menu__link" href="../_google/contact-us.html" target="_self" onmouseover="mudaFoto('../_google/_imagens/contato.png')" onmouseout="mudaFoto('../_google/_imagens/especificacoes.png')">Fale conosco</a>
+		</nav>
+	</header>
+
+	<main class="content">
+		<div class="main__content">
+			<h1>Raio-X no Google Glass</h1>
+			<h2>por Andrei Scola</h2>
+			<h3>Atualizado em 01/Maio/2013</h3>
+			<p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+		</div>
+		<div class="content__image">
+			<img class="content__image__left" src="../_google/_imagens/glass-esquema-marcado.jpg" usemap="#meumapa"/>
+			<map name="meumapa">
+				<area shape="rect" coords="173,203,276,266" href="../_google/frame.html#content__article__screen" target="janela"/>
+				<area shape="circle" coords="158,245,12" href="../_google/frame.html#content__article__camera" target="janela"/>
+				<area shape="circle" coords="77,52,11" href="../_google/frame.html#content__article__gadgets" target="janela"/>
+				<area shape="poly" coords="28,143,83,216,84,249,27,169" href="../_google/frame.html#content__article__sensor" target="janela"/>
+			</map>
+			<iframe src="../_google/frame.html" name="janela" class="frame__specification" scrolling="no"></iframe>
+		</div>
+	</main>
+	
+	<footer class="main__footer">
+		<p><a class="footer__link" href="https://linkedin.com/in/andreioliveirascola" target="_blank">Linkedin</a></p> 
+		<p><a class="footer__link" href="https://github.com/andrei-oliveeira" target="_blank"> Github </a></p>	
+		<p class="footer__text">Copyright &copy; 2013 | Desenvolvido por Andrei Scola</p>
+	</footer>
+</body>
+</html>

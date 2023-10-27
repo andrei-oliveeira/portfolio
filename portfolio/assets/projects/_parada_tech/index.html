@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Parada Tech</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+	* {
+		padding: 0;
+		margin: 0;
+	}
+
+	html {
+		min-height: 100%;
+		background-image: url('../_parada_tech/_imagens/parada-tech-back.jpg');
+		background-size: cover;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	body {
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+	}
+
+	a {
+		transition: all 0.5s ease;
+	}
+
+	a:hover {
+		transform: scale(0.95);
+	}
+
+	.temp-text {
+		text-align: center;
+		color: #000;
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+
+	.temp-text h1 {
+		font-family: 'Krona One', sans-serif;
+		font-size: 2rem;
+	}
+
+	.temp-text p {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1rem;
+	}
+
+	.loading-icon {
+		font-size: 40px;
+		animation: spin 2s linear infinite;
+	}
+
+	@keyframes spin {
+		0% {
+			transform: rotate(0deg);
+		}
+
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+	.icons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+	}
+</style>
+
+<body>
+	<div class="temp-text">
+		<h1>Em manutenção</h1>
+		<p>O site está quase pronto!</p>
+		<i class="fa fa-spinner loading-icon"></i>
+	</div>
+	<div class="icons">
+		<a href="../../../index.html"><img width="50" height="50" src="https://img.icons8.com/ios/50/circled-left-2.png"
+				alt="circled-left-2" /></a>
+		<a href="https://linkedin.com/in/andreioliveirascola" target="_blank"><img width="50" height="50"
+				src="https://img.icons8.com/ios/50/linkedin-circled--v1.png" alt="linkedin-circled--v1" /></a>
+		<a href="https://github.com/andrei-oliveeira" target="_blank"><img width="50" height="50"
+				src="https://img.icons8.com/ios/50/github--v1.png" alt="github--v1" /></a>
+		<a href="https://wa.me/+5551994151338" target="_blank"><img width="50" height="50"
+				src="https://img.icons8.com/ios/50/whatsapp--v1.png" alt="whatsapp--v1" /></a>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fotos | Google Glass</title>
+	<link rel="stylesheet" href="../_google/_css/picture.css"/>
+</head>
+<script>
+	function mudaFoto(foto) 
+		{document.getElementById("icon").src = foto;}
+</script>
+<body>
+	<header class="header">
+		<hgroup class="presentation__title">
+			<h1><strong>Google</strong> Glass</h1>
+			<h2>A revolução do Google está chegando<h2>
+		</hgroup>
+		<section class="header__image">
+			<img id="icon" src="../_google/_imagens/glass-oculos-preto-peq.png"/>	
+		</section>
+		<nav class="header__menu">
+			<a class="header__menu__link" href="../_google/index.html" target="_self" onmouseover="mudaFoto('../_google/_imagens/home.png')" onmouseout="mudaFoto('../_google/_imagens/fotos.png')">Home</a>
+			<a class="header__menu__link" href="../_google/specifications.html" target="_self" onmouseover="mudaFoto('../_google/_imagens/especificacoes.png')" onmouseout="mudaFoto('../_google/_imagens/fotos.png')">Especificações</a>
+			<a class="header__menu__link" href="../_google/picture.html" target="_self" onmouseover="mudaFoto('../_google/_imagens/fotos.png')" onmouseout="mudaFoto('../_google/_imagens/fotos.png')">Fotos</a>
+			<a class="header__menu__link" href="../_google/contact-us.html" target="_self" onmouseover="mudaFoto('../_google/_imagens/contato.png')" onmouseout="mudaFoto('../_google/_imagens/fotos.png')">Fale conosco</a>
+		</nav>
+	</header>
+
+	<main class="content">
+		<div class="main__content">
+			<h1>Galeria de Imagens do Google Glass</h1>
+			<h2>por Andrei Scola</h2>
+			<h3>Atualizado em 01/Maio/2013</h3>
+			<p>Veja na nossa galeria de fotos do Google Glass.</p>
+		</div>
+		<section class="gallery">
+			<div class="gallery__photo__top">
+				<img src="../_google/_imagens/galeria-01.jpg" alt="Agendas e lembretes">
+				<img src="../_google/_imagens/galeria-02.jpg" alt="Sergey Brin usando o Glass" >	
+				<img src="../_google/_imagens/galeria-03.jpg" alt="Leve e compacto">	
+			</div>
+			<div class="gallery__photo__low">
+				<img src="../_google/_imagens/galeria-04.jpg" alt="Sensação de uma tela de 50'" >	
+				<img src="../_google/_imagens/galeria-05.jpg" alt="Vários tipos de lentes" >	
+				<img src="../_google/_imagens/galeria-06.jpg" alt="informações importantes" >
+			</div>
+		</section>
+	</main>	
+	
+	<footer class="main__footer">
+		<p><a class="footer__link" href="https://linkedin.com/in/andreioliveirascola" target="_blank">Linkedin</a></p> 
+		<p><a class="footer__link" href="https://github.com/andrei-oliveeira" target="_blank"> Github </a></p>	
+		<p class="footer__text">Copyright &copy; 2013 | Desenvolvido por Andrei Scola</p>
+	</footer>
+	<script>
+	function myFunction(imgs) {
+		var expandImg = document.getElementById("expandedImg");
+		var imgText = document.getElementById("imgText");
+		expandImg.src = imgs.src;
+		imgText.innerHTML = imgs.alt;
+		expandImg.parentElement.style.display = "block";
+	  }
+	</script>
+</body>
+</html>

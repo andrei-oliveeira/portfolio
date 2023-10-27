@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fale conosco | Google Glass</title>
+	<link rel="stylesheet" href="../_google/_css/contact-us.css"/>
+</head>
+<script>
+	function mudaFoto(foto) 
+		{document.getElementById("icon").src = foto;}
+</script>
+<body>
+	<header class="header">
+		<hgroup class="presentation__title">
+			<h1><strong>Google</strong> Glass</h1>
+			<h2>A revolução do Google está chegando<h2>
+		</hgroup>
+		<section class="header__image">
+			<img id="icon" src="../_google/_imagens/glass-oculos-preto-peq.png"/>	
+		</section>
+		<nav class="header__menu">
+			<a class="header__menu__link" href="../_google/index.html" target="_self" onmouseover="mudaFoto('../_google/_imagens/home.png')" onmouseout="mudaFoto('../_google/_imagens/contato.png')">Home</a>
+			<a class="header__menu__link" href="../_google/specifications.html" target="_self" onmouseover="mudaFoto('../_google/_imagens/especificacoes.png')" onmouseout="mudaFoto('../_google/_imagens/contato.png')">Especificações</a>
+			<a class="header__menu__link" href="../_google/picture.html" target="_self" onmouseover="mudaFoto('../_google/_imagens/fotos.png')" onmouseout="mudaFoto('../_google/_imagens/contato.png')">Fotos</a>
+			<a class="header__menu__link" href="../_google/contact-us.html" target="_self" onmouseover="mudaFoto('../_google/_imagens/contato.png')" onmouseout="mudaFoto('../_google/_imagens/contato.png')">Fale conosco</a>
+		</nav>
+	</header>
+
+	<main class="content">
+		<section class="header__content">
+				<h1>Formulário de Contato</h1>
+				<h2>por Andrei Scola</h2>
+				<h3>Atualizado em 01/Maio/2013</h3>
+		</section>
+		<form method="post" id="fContato" action="" oninput="calc_total();">
+			<fieldset class="usuario">
+				<legend>Identificação do Usuário</legend>
+					<p><label for="cNome">Nome: </label><input type="text" name="tNome" id="cNome" size="50" maxlength="50" placeholder=" Digite seu nome"/></p>
+					<p><label for="cSobrenome">Sobrenome: </label><input type="text" name="tSobrenome" id="come" size="50" maxlength="50" placeholder=" Digite seu sobrenome"/></p>
+					<p><label for="cMail">E-mail: </label><input type="email" name="tMail" id="cMail" size="30" maxlength="40" placeholder=" Digite seu e-mail"/></p>
+					<p><label for="cMail">Confirme seu E-mail: </label><input type="email" name="tMail" id="cMail" size="30" maxlength="40" placeholder=" Digite seu e-mail novamente"/></p>
+					<p><label for="cSenha">Senha: </label><input type="password" name="tSenha" id="cSenha" size="30" maxlength="8" placeholder=" Digite sua senha"/></p>
+					<p><label for="cSenha">Confirme sua senha </label><input type="password" name="tSenha" id="cSenha" size="30" maxlength="8" placeholder=" Digite sua senha novamente"/></p>
+				<fieldset class="sexo">
+					<legend>Sexo</legend>
+						<input type="radio" name="tSexo" id="cMasc"/><label for="cMasc" > Masculino</label><br/>
+						<input type="radio" name="tSexo" id="cFem"/><label for="cFem"> Feminino</label>
+				</fieldset>
+					<p><label for="cNasc">Data de Nascimento: </label><input type="date" name="tNasc" id="cNasc"/></p>
+			</fieldset>
+				
+			<fieldset class="endereco">
+				<legend>Endereço do Usuário</legend>
+				<p><label for="cCep">CEP: </label><input type="text" name="tCep" id="cCep" size="20" maxlength="8" placeholder=" Digite seu CEP"/></p>
+				<p><label for="cRua">Logradouro: </label><input type="text" name="tRua" id="cRua" size="30" maxlength="70" placeholder=" Rua, Avenida, Travessa, etc..."/></p>
+				<p><label for="cNum">Número: </label><input type="number" name="tNum" id="cNum" min="0" max="99999"/></p>
+				<p><label for="cEst">Estado: </label>
+				<select name="tEst" id="cEst"></select>
+				</p>
+				<p><label for="cCid">Cidade: </label><input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder=" Digite sua cidade" list="cidades"/></p>
+				<datalist id="cidades"></datalist>
+				</fieldset>
+				
+			<fieldset class="mensagem">
+					<legend>Mensagem do Usuário</legend>
+					<p><label for="cUrg">Grau de Urgência: Mín </label><input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/> Máx</p>
+					<p><label for="cMsg">Mensagem:</label> <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder=" Deixe aqui sua mensagem..."></textarea></p>
+			</fieldset>
+				
+			<fieldset class="pedido">
+					<legend>Quero um Google Glass</legend>
+					<p><input type="checkbox" name="tPed" id="cPed"/><label for="cPed"> Gostaria de adquirir um Google Glass quando disponível</label></p>
+					<p><label for="cCor">Cor: <input type="color" name="tCor" id="cCor" value="#cecece"/></label></p>
+					<p><label for="cQtd">Quantidade:</label><input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0"/></p>
+					<p><label for="cTot">Preço Total: R$</label><input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly/></p>
+			</fieldset>
+			<input type="image" class="botao" name="tEnviar" src="../_google/_imagens/botao-enviar.png">
+		</form>
+		
+	</main>
+	
+	<footer class="main__footer">
+		<p><a class="footer__link" href="https://linkedin.com/in/andreioliveirascola" target="_blank">Linkedin</a></p> 
+		<p><a class="footer__link" href="https://github.com/andrei-oliveeira" target="_blank"> Github </a></p>	
+		<p class="footer__text">Copyright &copy; 2013 | Desenvolvido por Andrei Scola</p>
+	</footer>
+</body>
+</html>
