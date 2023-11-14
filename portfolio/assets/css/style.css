@@ -191,7 +191,8 @@ header {
 	justify-content: flex-start;
 	align-items: flex-start;
 	gap: 100px;
-	width: 75%;
+	width: 100%;
+	padding: 2%;
 	padding-bottom: 5%;
 }
 
@@ -222,7 +223,6 @@ header {
 .exp-jobs1 li {
 	list-style: none;
 	padding: 2.5%;
-	letter-spacing: 0.5px;
 }
 
 .list-exp-jobs1 {
@@ -412,6 +412,10 @@ footer ul {
 }
 
 @media (max-width: 400px) {
+	.top {
+		width: 8%;
+	}
+
 	.h-menu-list {
 		flex-direction: column;
 		gap: 10px;
@@ -434,7 +438,7 @@ footer ul {
 	}
 
 	.s-home-present h1 {
-		font-size: 1rem;		
+		font-size: 1rem;
 	}
 
 	.s-home-present p {
@@ -479,7 +483,7 @@ footer ul {
 	}
 
 	.s-about-p-img img {
-		width: 50%;		
+		width: 50%;
 	}
 
 	#s-experience {
@@ -513,28 +517,32 @@ footer ul {
 	.s-experience-t p {
 		width: 100%;
 		text-align: start;
+		font-size: 0.7rem;
 	}
 
 	#exp {
+		width: 100%;
+	}
+
+	.exp-jobs1 {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		list-style: none;
 		gap: 10px;
-		width: 100%;
 		padding: 2%;
 	}
 
-	.exp-jobs1,
-	.exp-jobs2 {
-		flex-direction: column;
-		gap: 10px;
-		padding: 0;
+	.list-exp-jobs1 {
 		width: 100%;
-	}
-
-	.exp-jobs1 p,
-	.exp-jobs2 p {
-		width: 100%;
+		border-radius: 5px 20px 5px 20px;
+		border: 1px solid var(--color-neutral-20);
+		background: linear-gradient(to right, #e0e0b6, #87b091);
+		padding: 2%;
+		font-size: 0.7rem;
+		font-family: var(--font-basic-20);
+		color: var(--color-neutral-10);
+		font-weight: 600;
+		transition: all 0.5s ease-in-out;
 	}
 
 	.h-skills {
@@ -544,19 +552,18 @@ footer ul {
 	}
 
 	.s-skills-tooltip {
-		width: 100%;
 		display: flex;
 		flex-direction: column;
 	}
 
 	.tooltip img {
-		padding: 0;
-		transition: 0.3s;
+		padding: 2%;
+		transition: all 0.5s ease-in-out;
 	}
 
 	.tooltip:hover img {
 		transform: none;
-		border-radius: 50% 50%;
+		transform: scale(0.95);
 	}
 
 	.tooltip {
@@ -568,7 +575,7 @@ footer ul {
 	}
 
 	.s-projects-box1 {
-		gap: 10px;
+		gap: 25px;
 		justify-content: center;
 	}
 
@@ -593,6 +600,10 @@ footer ul {
 }
 
 @media (min-width: 401px) and (max-width: 480px) {
+	.top {
+		width: 9%;
+	}
+
 	.h-menu-list {
 		flex-direction: column;
 		gap: 10px;
@@ -687,26 +698,32 @@ footer ul {
 	.s-experience-t p {
 		width: 100%;
 		text-align: start;
+		font-size: 0.7rem;
 	}
 
 	#exp {
+		width: 100%;
+	}
+
+	.exp-jobs1 {
 		display: flex;
-		justify-content: center;
-		gap: 10px;
-		width: 100%;
-	}
-
-	.exp-jobs1,
-	.exp-jobs2 {
 		flex-direction: column;
-		gap: 25px;
-		padding: 0;
-		width: 50%;
+		list-style: none;
+		gap: 1px;
+		padding: 2%;
 	}
 
-	.exp-jobs1 p,
-	.exp-jobs2 p {
+	.list-exp-jobs1 {
 		width: 100%;
+		border-radius: 5px 20px 5px 20px;
+		border: 1px solid var(--color-neutral-20);
+		background: linear-gradient(to right, #e0e0b6, #87b091);
+		padding: 2%;
+		font-size: 0.7rem;
+		font-family: var(--font-basic-20);
+		color: var(--color-neutral-10);
+		font-weight: 600;
+		transition: all 0.5s ease-in-out;
 	}
 
 	.h-skills {
@@ -720,7 +737,7 @@ footer ul {
 	}
 
 	.tooltip img {
-		padding: 0;
+		padding: 2%;
 	}
 
 	.tooltip:hover img {
@@ -746,6 +763,10 @@ footer ul {
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
+	.top {
+		width: 9%;
+	}
+
 	.h-menu-list {
 		flex-direction: column;
 		gap: 10px;
@@ -839,27 +860,33 @@ footer ul {
 
 	.s-experience-t p {
 		width: 100%;
-		text-align: justify;
+		text-align: start;
+		font-size: 0.9rem;
 	}
 
 	#exp {
+		width: 100%;
+	}
+
+	.exp-jobs1 {
 		display: flex;
-		justify-content: center;
-		gap: 10px;
-		width: 100%;
-	}
-
-	.exp-jobs1,
-	.exp-jobs2 {
 		flex-direction: column;
-		gap: 25px;
-		padding: 0;
-		width: 50%;
+		list-style: none;
+		gap: 1px;
+		padding: 2%;
 	}
 
-	.exp-jobs1 p,
-	.exp-jobs2 p {
+	.list-exp-jobs1 {
 		width: 100%;
+		border-radius: 5px 20px 5px 20px;
+		border: 1px solid var(--color-neutral-20);
+		background: linear-gradient(to right, #e0e0b6, #87b091);
+		padding: 1%;
+		font-family: var(--font-basic-20);
+		font-size: 0.7rem;
+		color: var(--color-neutral-10);
+		font-weight: 600;
+		transition: all 0.5s ease-in-out;
 	}
 
 	.h-skills {
@@ -928,7 +955,6 @@ footer ul {
 	}
 
 	#s-about p,
-	#s-experience p,
 	#s-skills p,
 	#s-projects p {
 		font-size: 0.7rem;
@@ -983,27 +1009,150 @@ footer ul {
 
 	.s-experience-t p {
 		width: 100%;
-		text-align: justify;
+		font-size: 0.9rem;
+		padding: 2.5%;
 	}
 
 	#exp {
+		width: 100%;
+	}
+
+	.exp-jobs1 {
 		display: flex;
-		justify-content: center;
-		gap: 10px;
-		width: 100%;
-	}
-
-	.exp-jobs1,
-	.exp-jobs2 {
 		flex-direction: column;
-		gap: 25px;
-		padding: 0;
-		width: 50%;
+		list-style: none;
+		gap: 1px;
+		padding: 2%;
 	}
 
-	.exp-jobs1 p,
-	.exp-jobs2 p {
+	.list-exp-jobs1 {
 		width: 100%;
+		border-radius: 5px 20px 5px 20px;
+		border: 1px solid var(--color-neutral-20);
+		background: linear-gradient(to right, #e0e0b6, #87b091);
+		padding: 1%;
+		font-family: var(--font-basic-20);
+		font-size: 0.9rem;
+		color: var(--color-neutral-10);
+		font-weight: 600;
+		transition: all 0.5s ease-in-out;
 	}
 }
 
+@media (min-width: 992px) and (max-width: 1200px) {
+	.h-m-link {
+		font-size: 1.25rem;
+	}
+
+	#s-home img {
+		display: none;
+	}
+
+	.s-home-present {
+		width: 100%;
+		gap: 25px;
+		background-color: #111;
+		padding: 2%;
+		border-radius: 10px;
+	}
+
+	.s-home-present h1 {
+		font-size: 1rem;
+	}
+
+	.s-home-present p {
+		font-size: 0.7rem;
+		font-weight: 200;
+	}
+
+	#s-about h2,
+	#s-experience h2,
+	#s-skills h2,
+	#s-projects h2 {
+		font-size: 1.25rem;
+	}
+
+	#s-about p,
+	#s-skills p,
+	#s-projects p {
+		font-size: 0.7rem;
+	}
+
+	#s-about {
+		padding: 1%;
+		margin: 2% 10%;
+		background-color: #111;
+		border-radius: 10px;
+	}
+
+	.s-about-p-img {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		text-align: justify;
+		gap: 25px;
+	}
+
+	.s-about-p-img img {
+		width: 50%;
+	}
+
+	#s-experience {
+		background-color: #111;
+		margin: 2% 10%;
+		padding: 1%;
+		border-radius: 10px;
+	}
+
+	.s-experience-t img {
+		display: none;
+	}
+
+	.s-experience-title h4 {
+		font-size: 1rem;
+	}
+
+	.s-experience-title h3 {
+		font-size: 1.25rem;
+	}
+
+	.s-experience-title p {
+		font-size: 0.7rem;
+	}
+
+	.s-experience-t {
+		width: 100%;
+	}
+
+	.s-experience-t p {
+		width: 100%;
+		font-size: 0.9rem;
+		padding: 2.5%;
+	}
+
+	#exp {
+		width: 100%;
+	}
+
+	.exp-jobs1 {
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		gap: 1px;
+		padding: 2%;
+	}
+
+	.list-exp-jobs1 {
+		width: 100%;
+		border-radius: 5px 20px 5px 20px;
+		border: 1px solid var(--color-neutral-20);
+		background: linear-gradient(to right, #e0e0b6, #87b091);
+		padding: 1%;
+		font-family: var(--font-basic-20);
+		font-size: 0.9rem;
+		color: var(--color-neutral-10);
+		font-weight: 600;
+		transition: all 0.5s ease-in-out;
+	}
+}
